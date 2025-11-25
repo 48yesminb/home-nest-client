@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { auth, googleProvider } from "../firebase/firebase.config";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
@@ -93,7 +92,7 @@ function Login() {
       </button>
 
       <p className="text-center mt-4">
-        Don’t have an account?{" "}
+        Don't have an account?{" "}
         <Link to="/register" className="text-blue-600 font-semibold">
           Register here
         </Link>
