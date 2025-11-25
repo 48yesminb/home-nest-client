@@ -18,14 +18,7 @@ function Footer() {
         </div>
 
         
-        <div className="flex flex-col items-center md:items-end gap-2">
-          <p className="text-sm">© 2025 HomeNest. All rights reserved.</p>
-          <div className="flex gap-3 mt-1">
-            <a href="#" className="hover:text-yellow-300 transition"><FaFacebookF /></a>
-            <a href="#" className="hover:text-yellow-300 transition"><FaTwitter /></a>
-            <a href="#" className="hover:text-yellow-300 transition"><FaInstagram /></a>
-          </div>
-        </div>
+        
       </div>
     </footer>
   );
