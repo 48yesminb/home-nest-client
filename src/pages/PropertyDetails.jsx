@@ -20,8 +20,8 @@ function PropertyDetails() {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const propertyRes = await axios.get(`http://localhost:3000/properties/${id}`);
-        const reviewsRes = await axios.get(`http://localhost:3000/ratings/property/${id}`);
+        const propertyRes = await axios.get(`https://home-nest-server-phi.vercel.app/properties/${id}`);
+        const reviewsRes = await axios.get(`https://home-nest-server-phi.vercel.app/ratings/property/${id}`);
         setProperty(propertyRes.data);
         setReviews(reviewsRes.data);
       } catch (err) {
@@ -69,7 +69,7 @@ function PropertyDetails() {
         reviewText,
       };
 
-      await axios.post("http://localhost:3000/ratings", newReview, {
+      await axios.post("https://home-nest-server-phi.vercel.app/ratings", newReview, {
         headers: { Authorization: `Bearer ${token}` },
       });
 

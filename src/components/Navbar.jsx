@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
-import { useAuth } from "../context/AuthContext"; // যদি তোমার auth context থাকে
+import { useAuth } from "../context/AuthContext"; 
 import img from "../assets/home_nest_vn_logo.jpg";
 
 function Navbar() {
@@ -23,7 +23,7 @@ function Navbar() {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
     document.documentElement.setAttribute("data-theme", newTheme);
-    localStorage.setItem("theme", newTheme); // save preference
+    localStorage.setItem("theme", newTheme); 
   };
 
   return (

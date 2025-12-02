@@ -8,7 +8,7 @@ function FeaturedProperties() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/properties")
+      .get("https://home-nest-server-phi.vercel.app/properties")
       .then((res) => {
         const sorted = res.data.sort((a, b) => b._id.localeCompare(a._id));
         setProperties(sorted.slice(0, 6));

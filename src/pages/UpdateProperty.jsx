@@ -16,14 +16,14 @@ function UpdateProperty() {
   const [location, setLocation] = useState("");
   const [price, setPrice] = useState("");
   const [image, setImage] = useState("");
-  const [loading, setLoading] = useState(true); // data loading
-  const [submitting, setSubmitting] = useState(false); // submit disable
+  const [loading, setLoading] = useState(true); 
+  const [submitting, setSubmitting] = useState(false); // 
 
   useEffect(() => {
     const fetchProperty = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`http://localhost:3000/properties/${id}`);
+        const res = await axios.get(`https://home-nest-server-phi.vercel.app/properties/${id}`);
         const property = res.data;
 
         if (property.userEmail !== user.email) {
@@ -56,7 +56,7 @@ function UpdateProperty() {
       const token = await auth.currentUser.getIdToken(true);
 
       await axios.patch(
-        `http://localhost:3000/properties/${id}`,
+        `https://home-nest-server-phi.vercel.app/properties/${id}`,
         { title, description, category, location, price: parseInt(price), image },
         { headers: { Authorization: `Bearer ${token}` } }
       );

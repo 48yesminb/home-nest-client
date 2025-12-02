@@ -11,7 +11,7 @@ function Register() {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-  const { user } = useAuth(); // AuthContext থেকে current user নেওয়া হচ্ছে
+  const { user } = useAuth(); 
 
   //  Password
   const validatePassword = (pwd) => {

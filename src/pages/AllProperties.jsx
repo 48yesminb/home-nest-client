@@ -5,7 +5,7 @@ function AllProperties() {
   const [properties, setProperties] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/properties")
+    axios.get("https://home-nest-server-phi.vercel.app/properties")
       .then(res => setProperties(res.data))
       .catch(err => console.error(err));
   }, []);

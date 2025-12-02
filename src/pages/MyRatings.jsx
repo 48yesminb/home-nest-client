@@ -17,7 +17,7 @@ function MyRatings() {
       setLoading(true);
       const token = await auth.currentUser.getIdToken(true);
       const res = await axios.get(
-        `http://localhost:3000/ratings?email=${user.email}`,
+        `https://home-nest-server-phi.vercel.app/ratings?email=${user.email}`,
         { headers: { Authorization: `Bearer ${token}` } }
       );
       setRatings(res.data);
@@ -46,7 +46,7 @@ function MyRatings() {
 
     try {
       const token = await auth.currentUser.getIdToken(true);
-      await axios.delete(`http://localhost:3000/ratings/${ratingId}`, {
+      await axios.delete(`https://home-nest-server-phi.vercel.app/ratings/${ratingId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       Swal.fire("Deleted!", "Rating deleted successfully.", "success");

@@ -16,7 +16,7 @@ function MyProperties() {
       const token = await auth.currentUser.getIdToken(true);
       const email = auth.currentUser.email;
 
-      const res = await axios.get(`http://localhost:3000/properties?email=${email}`, {
+      const res = await axios.get(`https://home-nest-server-phi.vercel.app/properties?email=${email}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -46,7 +46,7 @@ function MyProperties() {
       try {
         const token = await auth.currentUser.getIdToken(true);
 
-        await axios.delete(`http://localhost:3000/properties/${propertyId}`, {
+        await axios.delete(`https://home-nest-server-phi.vercel.app/properties/${propertyId}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 

@@ -2,7 +2,7 @@ function WhyChooseUs() {
   return (
     <section className="py-12 bg-blue-50 dark:bg-gray-900">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold mb-6 dark:text-white">Why Choose Us</h2>
+        <h2 className="text-3xl font-bold mb-6 dark:text-blue-950">Why Choose Us</h2>
         <p className="max-w-3xl mx-auto text-gray-600 dark:text-gray-300 mb-10">
           We provide trusted, verified properties at the best prices. Our mission
           is to make your home-buying experience safe, smooth, and stress-free.

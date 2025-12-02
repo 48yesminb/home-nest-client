@@ -28,7 +28,7 @@ function AddProperty() {
 
       const newProperty = { title, description, category, location, price: parseInt(price), image };
 
-      await axios.post("http://localhost:3000/properties", newProperty, {
+      await axios.post("https://home-nest-server-phi.vercel.app/properties", newProperty, {
         headers: { Authorization: `Bearer ${token}` }
       });
 
