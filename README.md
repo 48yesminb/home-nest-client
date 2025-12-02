@@ -1,6 +1,6 @@
 WEBSITE NAME: HomeNest - A Real Estate Listing Portal
 
-Live  site URL : 
+Live  site URL : https://magical-crumble-0017ec.netlify.app/
 
  
  ওয়েবসাইটের ফিচারসমূহ:
