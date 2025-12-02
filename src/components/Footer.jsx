@@ -11,11 +11,7 @@ function Footer() {
         </div>
 
         
-        <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6">
-          <a href="/" className="hover:text-yellow-300 transition">Home</a>
-          <a href="/all-properties" className="hover:text-yellow-300 transition">All Properties</a>
-          <a href="/add-property" className="hover:text-yellow-300 transition">Add Property</a>
-        </div>
+        
 
         
         <div className="flex flex-col items-center md:items-end gap-2">
