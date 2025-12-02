@@ -1,16 +1,20 @@
-# React + Vite
+WEBSITE NAME: HomeNest - A Real Estate Listing Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live  site URL : 
 
-Currently, two official plugins are available:
+ 
+ ওয়েবসাইটের ফিচারসমূহ:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ব্যবহারকারীরা বিভিন্ন ধরনের প্রপার্টি ব্রাউজ, সার্চ এবং প্রপার্টির সম্পূর্ণ ডিটেইলস দেখতে পারে।
 
-## React Compiler
+Firebase Authentication ব্যবহার করে Google এবং Email/Password — দু’ভাবেই সাইন ইন/সাইন আপ করার সুবিধা রয়েছে।
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+লগইন করা ব্যবহারকারীরা নতুন প্রপার্টি যুক্ত করতে পারে এবং শুধু নিজের পোস্ট করা প্রপার্টিগুলো আপডেট বা ডিলিট করতে পারে।
 
-## Expanding the ESLint configuration
+প্রতিটি প্রপার্টির জন্য রেটিং ও রিভিউ দেওয়ার সুবিধা আছে, এবং অন্যান্য ব্যবহারকারীর রেটিংও দৃশ্যমান।
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+TailwindCSS ও DaisyUI ব্যবহার করে আধুনিক, রেসপন্সিভ এবং আকর্ষণীয় ইউজার ইন্টারফেস তৈরি করা হয়েছে।
+
+প্রপার্টি সার্চ, ক্যাটাগরি ফিল্টার এবং সোর্ট — সবকিছু MongoDB থেকে ডায়নামিকভাবে কাজ করে।
+
+JWT ভিত্তিক টোকেন ভ্যারিফিকেশন ব্যবহারের মাধ্যমে সকল প্রটেক্টেড রুট নিরাপদ করা হয়েছে।
