@@ -120,7 +120,14 @@ function UpdateProperty() {
           onChange={(e) => setLocation(e.target.value)}
           required
         />
-        
+        <input
+          type="text"
+          placeholder="Image URL"
+          className="input input-bordered w-full"
+          value={image}
+          onChange={(e) => setImage(e.target.value)}
+          required
+        />
         <button
           type="submit"
           className={`btn btn-primary w-full mt-3 ${submitting ? "opacity-50 cursor-not-allowed" : ""}`}
